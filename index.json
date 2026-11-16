@@ -17,6 +17,16 @@
         "key_id": "f7cfda7e2d93c956",
         "published_at": "2026-11-16T19:32:52"
       }
+    },
+    "logkit": {
+      "1.0.0": {
+        "file": "logkit-1.0.0.pkm",
+        "version": "1.0.0",
+        "sha256": "090a86c47318c55a8b3479b1f37d967ed5b21b9aad8378028e6628cdfb962498",
+        "pubkey": "YoNPw7yNLaw59RPo97P+78HK2hlh09F0iXIbHnpudno=",
+        "key_id": "f7cfda7e2d93c956",
+        "published_at": "2026-11-16T19:32:53"
+      }
     }
   }
 }
