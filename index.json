@@ -27,6 +27,16 @@
         "key_id": "f7cfda7e2d93c956",
         "published_at": "2026-11-16T19:32:53"
       }
+    },
+    "toolslib": {
+      "1.0.0": {
+        "file": "toolslib-1.0.0.pkm",
+        "version": "1.0.0",
+        "sha256": "8d8ec2bd06170241a5ad2172378654d2f59a5b499f1d31a1dd223760b41296d7",
+        "pubkey": "YoNPw7yNLaw59RPo97P+78HK2hlh09F0iXIbHnpudno=",
+        "key_id": "f7cfda7e2d93c956",
+        "published_at": "2026-11-16T19:32:54"
+      }
     }
   }
 }
