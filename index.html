@@ -30,6 +30,11 @@
                   font: inherit; outline: none; }
   .search input:focus { border-color: var(--teal-dim); }
   .demo { margin: 24px auto 0; }
+  #intro { position: fixed; inset: 0; background: var(--bg); z-index: 999;
+           display: none; align-items: center; justify-content: center;
+           cursor: pointer; transition: opacity .6s; }
+  #intro img { width: min(72vmin, 560px); max-width: 92%; }
+  #intro.fade { opacity: 0; pointer-events: none; }
   .demo img { display: block; margin: 0 auto; width: 440px; max-width: 90%;
               border: 1px solid var(--line); border-radius: 10px; }
   main { max-width: 720px; margin: 0 auto; padding: 28px 20px 80px; }
@@ -71,6 +76,7 @@
   install: <code style="color:var(--text)">pkm source add hub https://yifeihuang-dev.github.io/pkm-registry</code> ·
   powered by <a href="https://github.com/Yifeihuang-Dev/package-manager">pkm</a>
 </footer>
+<div id="intro"><img src="intro.gif" alt=""></div>
 <script>
 let PACKAGES = {};
 
@@ -116,6 +122,27 @@ function render() {
 
 document.getElementById("q").addEventListener("input", render);
 load();
+
+// first-visit fullscreen intro: plays once, click/key to skip
+(function () {
+  const intro = document.getElementById("intro");
+  if (!localStorage.getItem("pkm-intro-seen")) {
+    intro.style.display = "flex";
+    const hide = () => {
+      if (intro.classList.contains("fade")) return;
+      intro.classList.add("fade");
+      localStorage.setItem("pkm-intro-seen", "1");
+      setTimeout(() => intro.remove(), 700);
+      window.removeEventListener("click", hide);
+      window.removeEventListener("keydown", hide);
+    };
+    setTimeout(hide, 5000);
+    window.addEventListener("click", hide);
+    window.addEventListener("keydown", hide);
+  } else {
+    intro.remove();
+  }
+})();
 </script>
 </body>
 </html>
