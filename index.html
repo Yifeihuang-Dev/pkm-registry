@@ -33,7 +33,7 @@
   #intro { position: fixed; inset: 0; background: var(--bg); z-index: 999;
            display: none; align-items: center; justify-content: center;
            cursor: pointer; transition: opacity .6s; }
-  #intro img { width: min(72vmin, 560px); max-width: 92%; }
+  #intro video { width: min(72vmin, 560px); max-width: 92%; }
   #intro.fade { opacity: 0; pointer-events: none; }
   .demo img { display: block; margin: 0 auto; width: 440px; max-width: 90%;
               border: 1px solid var(--line); border-radius: 10px; }
@@ -76,7 +76,7 @@
   install: <code style="color:var(--text)">pkm source add hub https://yifeihuang-dev.github.io/pkm-registry</code> ·
   powered by <a href="https://github.com/Yifeihuang-Dev/package-manager">pkm</a>
 </footer>
-<div id="intro"><img src="intro.gif" alt=""></div>
+<div id="intro"><video src="intro.mov" muted autoplay playsinline></video></div>
 <script>
 let PACKAGES = {};
 
@@ -135,8 +135,13 @@ load();
       setTimeout(() => intro.remove(), 700);
       window.removeEventListener("click", hide);
       window.removeEventListener("keydown", hide);
+      v.removeEventListener("ended", hide);
+      v.removeEventListener("error", hide);
     };
-    setTimeout(hide, 5000);
+    const v = intro.querySelector("video");
+    v.addEventListener("ended", hide);      // normal end
+    v.addEventListener("error", hide);      // broken file: don't trap the visitor
+    v.addEventListener("loadedmetadata", () => setTimeout(hide, (v.duration || 10) * 1000 + 500));
     window.addEventListener("click", hide);
     window.addEventListener("keydown", hide);
   } else {
