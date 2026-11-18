@@ -12,10 +12,10 @@
       "1.1.0": {
         "file": "utils-1.1.0.pkm",
         "version": "1.1.0",
-        "sha256": "7108cb3c7cc879f74ab9f5bb94cf128f6cbb26b586d89ba86a04a1b7c067927e",
+        "sha256": "e036bb14544a3c8747e3284a3a15ff55f4dda6b4d0b82dc4622ff81e15a29baf",
         "pubkey": "YoNPw7yNLaw59RPo97P+78HK2hlh09F0iXIbHnpudno=",
         "key_id": "f7cfda7e2d93c956",
-        "published_at": "2026-11-16T19:32:52"
+        "published_at": "2026-11-18T15:49:00"
       }
     },
     "logkit": {
