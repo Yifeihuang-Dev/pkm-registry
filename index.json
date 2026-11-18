@@ -37,6 +37,16 @@
         "key_id": "f7cfda7e2d93c956",
         "published_at": "2026-11-18T15:57:38"
       }
+    },
+    "boblib": {
+      "1.0.0": {
+        "file": "boblib-1.0.0.pkm",
+        "version": "1.0.0",
+        "sha256": "82d956fc819bf3965b862bd2edfb9fac0033ae13333b1286e24ab1199dac9f09",
+        "pubkey": "BMLr4rz6gpmHbmZH4jnqb4+Yj5uVNfJwJZBDQjGHetI=",
+        "key_id": "17bdf15f07d61a6b",
+        "published_at": "2026-11-18T17:42:21"
+      }
     }
   }
 }
