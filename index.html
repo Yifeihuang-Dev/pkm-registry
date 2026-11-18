@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="logo.png">
 <title>PKM Hub</title>
 <style>
   :root {
@@ -20,6 +21,7 @@
   header { padding: 56px 24px 28px; text-align: center;
            background: radial-gradient(600px 220px at 50% 0%, #242424 0%, transparent 70%); }
   header h1 { font-size: 28px; letter-spacing: 1px; }
+  header h1 .logo { width: 30px; height: 30px; vertical-align: -7px; margin-right: 12px; }
   header h1 span { color: var(--teal); }
   header p { color: var(--dim); margin-top: 8px; font-size: 13px; }
   .search { margin: 20px auto 0; display: flex; max-width: 520px; }
@@ -55,7 +57,7 @@
 </head>
 <body>
 <header>
-  <h1>PKM <span>HUB</span></h1>
+  <h1><img src="logo.png" class="logo" alt="PKM logo"> PKM <span>HUB</span></h1>
   <p>signed .pkm packages — verify first, trust on first use, code as-is</p>
   <div class="search"><input id="q" placeholder="search packages… (try: log, utils, tools)"></div>
   <div class="demo"><img src="demo.gif" alt="pkm install in action"></div>
