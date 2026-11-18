@@ -38,6 +38,16 @@
         "published_at": "2026-11-18T15:57:38"
       }
     },
+    "biglib": {
+      "1.0.0": {
+        "file": "biglib-1.0.0.pkm",
+        "version": "1.0.0",
+        "sha256": "ce413117ad02d1cbcac54a7ee5c49eb73eae5cabd4438e8e6b5eb2268b70bea6",
+        "pubkey": "YoNPw7yNLaw59RPo97P+78HK2hlh09F0iXIbHnpudno=",
+        "key_id": "f7cfda7e2d93c956",
+        "published_at": "2026-11-18T21:26:42"
+      }
+    },
     "boblib": {
       "1.0.0": {
         "file": "boblib-1.0.0.pkm",
