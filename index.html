@@ -11,6 +11,10 @@
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   code { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
+  /* secondary info uses Calibri (macOS falls back to metric-compatible Carlito) */
+  header p, .stats, .pkg .latest, .pkg .install, .ver, .empty, footer {
+    font-family: Calibri, Carlito, "Segoe UI", sans-serif;
+  }
   body { background: var(--bg); color: var(--text);
          font: 15px/1.6 Georgia, "Palatino", serif; }
   header { padding: 56px 24px 28px; text-align: center;
