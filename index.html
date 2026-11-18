@@ -27,6 +27,9 @@
                   color: var(--text); padding: 12px 16px; border-radius: 8px;
                   font: inherit; outline: none; }
   .search input:focus { border-color: var(--teal-dim); }
+  .demo { margin: 24px auto 0; }
+  .demo img { display: block; margin: 0 auto; width: 440px; max-width: 90%;
+              border: 1px solid var(--line); border-radius: 10px; }
   main { max-width: 720px; margin: 0 auto; padding: 28px 20px 80px; }
   .stats { color: var(--dim); font-size: 12px; margin-bottom: 14px; }
   .pkg { background: var(--bg2); border: 1px solid var(--line); border-radius: 10px;
@@ -55,6 +58,7 @@
   <h1>PKM <span>HUB</span></h1>
   <p>signed .pkm packages — verify first, trust on first use, code as-is</p>
   <div class="search"><input id="q" placeholder="search packages… (try: log, utils, tools)"></div>
+  <div class="demo"><img src="demo.gif" alt="pkm install in action"></div>
 </header>
 <main>
   <div class="stats" id="stats"></div>
