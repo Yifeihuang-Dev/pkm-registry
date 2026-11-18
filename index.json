@@ -22,10 +22,10 @@
       "1.0.0": {
         "file": "logkit-1.0.0.pkm",
         "version": "1.0.0",
-        "sha256": "090a86c47318c55a8b3479b1f37d967ed5b21b9aad8378028e6628cdfb962498",
+        "sha256": "ba04d589e6e60c58fd7898ac1a8e14780bde6b1b66c08eaedad416952b883566",
         "pubkey": "YoNPw7yNLaw59RPo97P+78HK2hlh09F0iXIbHnpudno=",
         "key_id": "f7cfda7e2d93c956",
-        "published_at": "2026-11-16T19:32:53"
+        "published_at": "2026-11-18T15:49:01"
       }
     },
     "toolslib": {
