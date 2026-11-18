@@ -7,7 +7,7 @@
 <style>
   :root {
     --bg: #131313; --bg2: #1c1c1c; --line: #2c2c2c;
-    --text: #ffffff; --dim: #ffffff; --teal: #3fd0c9; --teal-dim: #2a8f8a;
+    --text: #ffffff; --dim: #ffffff; --teal: #ffffff; --teal-dim: #4a4a4a;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   code { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
@@ -18,7 +18,7 @@
   body { background: var(--bg); color: var(--text);
          font: 15px/1.6 Georgia, "Palatino", serif; }
   header { padding: 56px 24px 28px; text-align: center;
-           background: radial-gradient(600px 220px at 50% 0%, #1e2a2a 0%, transparent 70%); }
+           background: radial-gradient(600px 220px at 50% 0%, #242424 0%, transparent 70%); }
   header h1 { font-size: 28px; letter-spacing: 1px; }
   header h1 span { color: var(--teal); }
   header p { color: var(--dim); margin-top: 8px; font-size: 13px; }
@@ -37,7 +37,7 @@
   .pkg .name { font-size: 17px; color: var(--teal); font-weight: bold; }
   .pkg .latest { color: var(--dim); font-size: 12px; }
   .pkg .install { margin-left: auto; color: var(--dim); font-size: 12px; }
-  .pkg .install code { color: var(--text); background: #0c1018; padding: 3px 8px;
+  .pkg .install code { color: var(--text); background: #0a0a0a; padding: 3px 8px;
                        border-radius: 5px; border: 1px solid var(--line); }
   .pkg .detail { display: none; margin-top: 14px; border-top: 1px solid var(--line);
                  padding-top: 12px; font-size: 13px; }
@@ -46,7 +46,7 @@
   .ver b { color: var(--text); font-weight: normal; }
   .ver .sha { max-width: 220px; overflow: hidden; text-overflow: ellipsis; }
   footer { text-align: center; color: var(--dim); font-size: 12px; padding: 30px 0 40px; }
-  footer a { color: var(--teal-dim); text-decoration: none; }
+  footer a { color: var(--text); text-decoration: underline; }
   .empty { color: var(--dim); text-align: center; padding: 60px 0; }
 </style>
 </head>
